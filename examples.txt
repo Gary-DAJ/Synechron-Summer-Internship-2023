@@ -1,0 +1,123 @@
+NOTE = """
+These examples can be best tried out with the "Forms" Tab to see how many of these questions are answered
+"""
+
+invoice_0 = {
+    "image": "https://eswap.global/wp-content/uploads/2021/08/invoice.png",
+    "scale": 2,
+    "questions": """
+What is the Client Name?
+What is the Invoice No?
+What is the Invoice Date?
+What is the Due Date?
+What is the Amount of Labor 3hrs?
+What is the Unit Price of New set of Pedal arms?
+What is the Subtotal?
+What is the Sales Tax?
+What is the Total?
+"""
+}
+
+invoice_1 = {
+    "image": "https://docs.bellatrix.solutions/product-integrations/images/sampleinvoice.png",
+    "scale": 2,
+    "questions": """
+What is the Company?
+What is the name?
+What is the address?
+What is the email?
+What is the Subtotal?
+What is the Shipping?
+What is the Tax?
+What is the Total?
+What is the quantity of Cotton Male T-shirt?
+What is the Unit price of Cotton Male T-shirt?
+"""
+}
+
+kyc_0 = {
+    "image": "https://i.imgur.com/aHeN4vj.jpeg",
+    "scale": 4,
+    "questions": """
+What is the Licence No.?
+What is the Name?
+What is the S/W/D?
+What is the Address?
+What is the BG?
+What is the Authorization to Drive?
+What is the Issue Date?
+What is the Validity Date?
+What is the Inv Carr No?
+    """
+}
+
+kyc_1 = {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Specimen_Personal_Information_Page_South_Korean_Passport.jpg",
+    "scale": 3,
+    "questions": """
+What is the Type?
+What is the Issuing country?
+What is the Passport No.?
+What is the Surname?
+What are the Given Names?
+What is the Nationality?
+What is the Date of Birth?
+What is the Personal No.?
+What is the Sex?
+What is the Date of Issue?
+What is the Date of Expiry?
+What is the Authority?
+    """
+}
+
+kyc_2 = {
+    "image": "https://www.immihelp.com/assets/article-images/sample-oci-card-2.jpg",
+    "scale": 6,
+    "questions": """
+What is the Surname?
+What is the Given Name?
+What is the Nationality?
+What is the Place of Birth?
+What is the Sex?
+What is the Date of Birth?
+What is the Occupation?
+What is the Place of Issue?
+What is the Date of Issue?
+What is the No.?
+    """
+}
+
+# Questions 5, 6, 7, 8 get incorrect answers due to improper OCR. Scroll below to find a Gradio demo to check this out.
+# Try different scales and page segmentation modes
+form_0 = {
+    "image": "https://bemoneyaware.com/wp-content/uploads/2019/03/car-insurance-policy.jpg",
+    "scale": 2.5,
+    "questions": """
+What is the Total Liability Premium?
+What is the Basic Premium on Vehicle and non-electrical accessories?
+What is the Aggravation Cover?
+What is the Net Premium (A+B)?
+What is the Total Premium Payable?
+What is the Total Own Damage Premium?
+What is the Nominee Age?
+What is the OD Premium the preceding year?
+Where was this policy signed at?
+    """
+}
+
+form_1 = {
+    "image": "https://imgv2-2-f.scribdassets.com/img/document/371202185/original/a6147f7f76/1688705823?v=1",
+    "scale": 2.5,
+    "questions": """
+What is the Policy No?
+What is the Prev Policy No?
+What is the Insured's Name?
+What is the Helpline No.?
+What is the Issue Office Name?
+What is the Service Tax?
+What is the Total?
+What is the Total value?
+What is the Date?
+What is the Address?
+    """
+}
