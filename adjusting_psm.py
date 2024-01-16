@@ -20,3 +20,14 @@ def get_word_boxes_psm(image, scale, psm=3):
     # cv2_imshow(image_as_array)
     # cv2.waitKey(0)
     return image_as_array
+
+with gr.Blocks() as demo2:
+    with gr.Row():
+        image_x = gr.Image(type="filepath")
+        output_x = gr.Image()
+    with gr.Row():
+        scale_x = gr.Number(value=2, label="Scale factor")
+        psm_x = gr.Slider(1,13,3,step=1,label="psm")
+    put_text = gr.Button("OCR")
+    put_text.click(fn=get_word_boxes_psm, inputs=[image_x, scale_x, psm_x], outputs=output_x)
+demo2.launch() # debug=True
